@@ -27,7 +27,7 @@ $config['pw_min_len'] = env('PASSWORD_LENGTH', '8');
 
 $config['enable_devlog_alerts'] = env('ENABLE_DEV_LOG_ALERTS', 'n');
 
-$config['cache_driver'] = env('CACHE_DRIVER', 'memcached');
+$config['cache_driver'] = env('CACHE_DRIVER', 'file');
 
 $config['show_ee_news'] = env('SHOW_EE_NEWS', 'n');
 $config['share_analytics'] = env('SHARE_ANALYTICS', 'n');
@@ -86,10 +86,10 @@ $config['prv_msg_upload_path'] = '{base_path}/public/images/pm_attachments/';
 
 
 $config['redis'] = [
+  'port' => env('REDIS_PORT', 6379),
+  'timeout' => env('REDIS_TIMEOUT', 0),
 	'host' => env('REDIS_HOST', '127.0.0.1'),
   'password' => env('REDIS_PASSWORD', NULL),
-  'port' => env('REDIS_PORT', 6379),
-  'timeout' => env('REDIS_TIMEOUT', 0)
 ];
 
 // EOF

@@ -29,24 +29,24 @@ mix.webpackConfig({
 });
 
 if (mix.inProduction()) {
-  mix.webpackConfig({
-    plugins: [
-      new PurgecssPlugin({
+  // mix.webpackConfig({
+  //   plugins: [
+  //     new PurgecssPlugin({
 
-        // Specify the locations of any files you want to scan for class names.
-        paths: glob.sync([
-          path.join(__dirname, "system/user/templates/**/*.html"),
-          path.join(__dirname, "assets/js/**/*.vue")
-        ]),
-        extractors: [
-          {
-            extractor: TailwindExtractor,
-            extensions: ["html", "js", "php", "vue"]
-          }
-        ]
-      })
-    ]
-  })
+  //       // Specify the locations of any files you want to scan for class names.
+  //       paths: glob.sync([
+  //         path.join(__dirname, "system/user/templates/**/*.html"),
+  //         path.join(__dirname, "assets/js/**/*.vue")
+  //       ]),
+  //       extractors: [
+  //         {
+  //           extractor: TailwindExtractor,
+  //           extensions: ["html", "js", "php", "vue"]
+  //         }
+  //       ]
+  //     })
+  //   ]
+  // })
 }
 
 mix.js('assets/js/app.js', 'public/js/')
