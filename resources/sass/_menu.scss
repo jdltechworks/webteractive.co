@@ -1,0 +1,18 @@
+.menu a {
+  @apply py-4;
+  @apply mr-4;
+  @apply text-xs;
+  @apply uppercase;
+  @apply font-thin;
+
+  &.active,
+  &:hover {
+    text-decoration: none;
+    @apply border-b-2;
+    @apply border-blue-500;
+  }
+
+  &:last-child {
+    @apply mr-0;
+  }
+}

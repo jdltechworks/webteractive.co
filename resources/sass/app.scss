@@ -1,1 +1,30 @@
-//
+@tailwind base;
+@tailwind components;
+
+:root {
+  --primary: theme('colors.primary');
+  --secondary: theme('colors.secondary');
+  --white: theme('colors.white');
+}
+
+html,
+body {
+  color: var(--white);
+  background-color: var(--primary);
+  font-family: theme('fontFamily.nunito-sans');
+}
+
+
+a {
+  color: var(--white);
+  
+  &:hover {
+    @apply underline;
+  }
+}
+
+
+@tailwind utilities;
+
+@import 'neon';
+@import 'menu';

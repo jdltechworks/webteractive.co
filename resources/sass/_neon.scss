@@ -1,0 +1,36 @@
+.neon {
+  @apply absolute;
+  background-size: contain;
+
+  .shape {
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+
+    @apply z-10;
+    @apply absolute;
+    @apply rounded-full;
+    @apply inline-block;
+  }
+
+  &.pink {
+    background-image: url(/images/pink-glow.png);
+
+    .shape {      
+      background: transparent linear-gradient(223deg, #4C20B5 0%, #F56089 100%) 0% 0% no-repeat padding-box;
+    }
+  }
+
+  &.blue {
+    background-image: url(/images/blue-glow.png);
+
+    .shape {
+      top: 30%;
+      left: 30%;
+      width: 40%;
+      height: 40%;    
+      background: transparent linear-gradient(62deg, #27FC91 0%, #3041D6 100%) 0% 0% no-repeat padding-box;
+    }
+  }
+}
