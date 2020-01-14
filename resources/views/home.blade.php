@@ -12,7 +12,8 @@
     <body>
         <nav>
             <div class="container mx-auto py-8 flex justify-between">
-                <a href="/" class="logo"></a>
+                <a href="/" class="logo">
+                </a>
 
                 <div class="menu flex-0">
                     <a href="/about" class="active">About</a>
@@ -27,6 +28,7 @@
         <main>
             <div class="banner">
                 <div class="container mx-auto relative min-h-512">
+                    <h2>We code for food</h2>
                     <div class="absolute neon pink z-0" style="bottom: -140px; right: -200px; width: 512px; height: 512px;">
                         <span class="shape"></span>
                     </div>
@@ -36,5 +38,14 @@
                 </div>
             </div>
         </main>
+
+        <footer>
+            <section>
+            
+            </section>
+            <section>
+                
+            </section>
+        </footer>
     </body>
 </html>
