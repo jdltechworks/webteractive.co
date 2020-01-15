@@ -2,14 +2,15 @@
 @tailwind components;
 
 :root {
-  --primary: theme('colors.primary');
-  --secondary: theme('colors.secondary');
+  --primary: theme('colors.primary.500');
+  --secondary: theme('colors.secondary.500');
   --white: theme('colors.white');
 }
 
 html,
 body {
   color: var(--white);
+  background: transparent linear-gradient(189deg, var(--primary) 0%, var(--primary) 100%) 0% 0% no-repeat padding-box;
   background-color: var(--primary);
   font-family: theme('fontFamily.nunito-sans');
 }
@@ -28,3 +29,4 @@ a {
 
 @import 'neon';
 @import 'menu';
+@import 'banner';
